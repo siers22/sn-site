@@ -9,6 +9,9 @@ let Profile = () => {
                 <div className={c.profile_avatar}>
                     <img src={require("./../../pictures/avatar.jpg")}/>
                 </div>
+                <div className={c.profile_name}>
+                    <p><strong>Pidaras Eblanof</strong></p>
+                </div>
             </div>
             <div>
                 My posts

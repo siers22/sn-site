@@ -7,9 +7,10 @@
     display: grid;
     grid-template-areas:
 "profile-banner . profile-banner"
-". profile-avatar .";
+". profile-avatar ."
+". . profile_name";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
 
 }
@@ -18,14 +19,33 @@
     grid-area: profile-banner;
     width: 100%;
     z-index: 1;
+    border-radius: 30px;
 }
+
 
 .profile_avatar {
     grid-area: profile-avatar;
+    width: 19%;
+    height: 38%;
     z-index: 2;
+    margin-top: 30%;
+    margin-left: 5%;
+    box-shadow: 8px 10px 35px gray;
+    border-radius: 50%;
 
 }
 
 .profile_avatar img {
-    width: 15%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile_name{
+    grid-area: profile_name;
+    z-index: 3;
+    font-size: 14px;
+    font-size-adjust: 1;
+    color: darkgreen;
+    margin-top: 40%;
+    margin-left: 27%;
 }
