@@ -8,9 +8,10 @@
     grid-template-areas:
 "profile-banner . profile-banner"
 ". profile-avatar ."
-". . profile_name";
+". . profile_name"
+". . profile_description";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 
 
 }
@@ -30,8 +31,16 @@
     z-index: 2;
     margin-top: 30%;
     margin-left: 5%;
-    box-shadow: 8px 10px 35px gray;
+
+
+}
+
+.profile_avatar_shadow {
+
+    box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
     border-radius: 50%;
+
+
 
 }
 
@@ -40,7 +49,7 @@
     border-radius: 50%;
 }
 
-.profile_name{
+.profile_name {
     grid-area: profile_name;
     z-index: 3;
     font-size: 14px;
@@ -48,4 +57,14 @@
     color: darkgreen;
     margin-top: 40%;
     margin-left: 27%;
+}
+
+.profile_description {
+    grid-area: profile_description;
+    z-index: 3;
+    margin-left: 27%;
+    margin-top: 46%;
+    font-size: 12px;
+    font-size-adjust: 1;
+    color: palegreen;
 }
