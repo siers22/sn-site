@@ -1,0 +1,8 @@
+.header {
+    grid-area: header;
+    background-color: green;
+}
+
+.site_logo img{
+    width: 60px;
+}

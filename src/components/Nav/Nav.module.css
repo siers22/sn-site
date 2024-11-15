@@ -1,0 +1,17 @@
+.nav {
+    grid-area: nav;
+    background-color: darkgreen;
+
+}
+.item{
+    font-size: 12px;
+    font-size-adjust: 1;
+    margin-top: 15px;
+    margin-left: 5px;
+    color: white;
+
+}
+.item.settings{
+    margin-top: 60px;
+    margin-left: 5px;
+}

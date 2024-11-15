@@ -1,0 +1,31 @@
+.profile {
+    grid-area: profile;
+    background-color: lightblue;
+}
+
+.profile_banner_avatar {
+    display: grid;
+    grid-template-areas:
+"profile-banner . profile-banner"
+". profile-avatar .";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+
+}
+
+.profile_banner {
+    grid-area: profile-banner;
+    width: 100%;
+    z-index: 1;
+}
+
+.profile_avatar {
+    grid-area: profile-avatar;
+    z-index: 2;
+
+}
+
+.profile_avatar img {
+    width: 15%;
+}
