@@ -1,6 +1,6 @@
 .profile {
     grid-area: profile;
-    background-color: lightblue;
+
 }
 
 .profile_banner_avatar {
@@ -12,6 +12,7 @@
 ". . profile_description";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+
 
 
 }
@@ -32,30 +33,34 @@
     margin-top: 30%;
     margin-left: 5%;
 
-
 }
 
 .profile_avatar_shadow {
 
     box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
     border-radius: 50%;
+    height: 100%;
 
 
-
+}
+.profile_avatar_shadow img{
+    height: 100%;
 }
 
 .profile_avatar img {
     width: 100%;
     border-radius: 50%;
-}
 
+}
+.profile_name_description {
+    margin-top: -10%;
+}
 .profile_name {
     grid-area: profile_name;
     z-index: 3;
     font-size: 14px;
     font-size-adjust: 1;
     color: darkgreen;
-    margin-top: 40%;
     margin-left: 27%;
 }
 
@@ -63,7 +68,6 @@
     grid-area: profile_description;
     z-index: 3;
     margin-left: 27%;
-    margin-top: 46%;
     font-size: 12px;
     font-size-adjust: 1;
     color: palegreen;
