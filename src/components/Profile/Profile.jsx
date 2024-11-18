@@ -1,4 +1,5 @@
 import c from './Profile.module.css';
+import MyPosts from "./MyPosts/MyPosts";
 
 let Profile = () => {
     return (<div className={c.profile}>
@@ -18,24 +19,10 @@ let Profile = () => {
                 <div className={c.profile_description}>
                     <p>Я того все ебал</p>
                 </div>
+                <MyPosts></MyPosts>
             </div>
 
-            <p className={c.profile_content_text}>My posts </p>
 
-            <div className={c.profile_content}>
-                <div className={c.profile_content_input}>
-
-                    <label htmlFor="post_input">Post input <br></br></label>
-                    <input type="text" name="post_input"/>
-
-                </div>
-                <div className={c.profile_postbutton}>
-                    <p align={"center"}>POST</p>
-                </div>
-                <div className={c.profile_content_posts}>
-                    <p>Posts</p>
-                </div>
-            </div>
 
         </div>)
 }
