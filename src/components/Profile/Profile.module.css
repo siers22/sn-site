@@ -15,7 +15,6 @@
     grid-template-rows: repeat(4, 1fr);
 
 
-
 }
 
 .profile_banner {
@@ -44,7 +43,8 @@
 
 
 }
-.profile_avatar_shadow img{
+
+.profile_avatar_shadow img {
     height: 100%;
 }
 
@@ -53,10 +53,12 @@
     border-radius: 50%;
 
 }
+
 .profile_name_description {
     margin-top: -8%;
 
 }
+
 .profile_name {
     grid-area: profile_name;
     z-index: 3;
@@ -69,8 +71,41 @@
 .profile_description {
     grid-area: profile_description;
     z-index: 3;
-    margin-left: 30%;
+    margin-left: 29%;
     font-size: 12px;
     font-size-adjust: 1;
     color: palegreen;
+}
+
+.profile_content_text {
+    font-size: 14px;
+    font-size-adjust: 1;
+
+    margin-left: 5%;
+}
+
+.profile_content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas:
+            "post-input post-input"
+            ". post-button"
+            "posts posts";
+    border: blue 2px solid;
+}
+
+.profile_content_input {
+    grid-area: post-input;
+    border: 2px solid darkgreen;
+}
+
+.profile_postbutton {
+    grid-area: post-button;
+    border: black solid 1px;
+}
+
+.profile_content_posts {
+    grid-area: posts;
+    border: 1px solid darkgreen;
 }

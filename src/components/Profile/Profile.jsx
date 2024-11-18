@@ -20,14 +20,14 @@ let Profile = () => {
                     <p>Я того все ебал</p>
                 </div>
             </div>
-            <div>
-                My posts
+            <div className={c.profile_content}>
+                <p className={c.profile_content_text}>My posts </p>
+                <div className={c.profile_content_input}>
+                    <div className={c.profile_postbutton}>
+
+                    </div>
+                </div>
             </div>
-            <div>
-                New post
-            </div>
-            <div>Post1</div>
-            <div>Post2</div>
 
         </div>
     )

@@ -3,11 +3,11 @@ import c from './Nav.module.css';
 let Nav = () => {
     return (
         <nav className={c.nav}>
-            <div className={c.item}>
+            <div className={`${c.item} ${c.active}`}>
                 <a>Profile</a>
             </div>
             <div className={c.item}>
-                <a>Messages</a>
+                <a>Chat</a>
             </div>
             <div className={c.item}>
                 <a>Friends</a>
