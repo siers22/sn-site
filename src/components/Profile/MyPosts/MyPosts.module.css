@@ -1,0 +1,130 @@
+.profile {
+    grid-area: profile;
+
+
+}
+
+.profile_banner_avatar {
+    display: grid;
+    grid-template-areas:
+"profile-banner . profile-banner"
+". profile-avatar ."
+". . profile_name"
+". . profile_description";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+}
+
+.profile_banner {
+    grid-area: profile-banner;
+    width: 100%;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+
+.profile_avatar {
+    grid-area: profile-avatar;
+    width: 19%;
+    height: 38%;
+    z-index: 2;
+    margin-top: 30%;
+    margin-left: 5%;
+
+}
+
+.profile_avatar_shadow {
+
+    box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 50%;
+    height: 100%;
+
+
+}
+
+.profile_avatar_shadow img {
+    height: 100%;
+}
+
+.profile_avatar img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.profile_name_description {
+    margin-top: -8%;
+
+}
+
+.profile_name {
+    grid-area: profile_name;
+    z-index: 3;
+    font-size: 14px;
+    font-size-adjust: 1;
+    color: darkgreen;
+    margin-left: 27%;
+}
+
+.profile_description {
+    grid-area: profile_description;
+    z-index: 3;
+    margin-left: 29%;
+    font-size: 12px;
+    font-size-adjust: 1;
+    color: palegreen;
+}
+
+
+.profile_content {
+    /*display: grid;*/
+    /*grid-template-columns: 3fr 1fr;*/
+    /*grid-template-rows: 1fr 1fr 2fr;*/
+    /*gap: 1% 2%;*/
+    /*grid-template-areas:*/
+    /*        "post-input post-input"*/
+    /*        ". post-button"*/
+    /*        "posts posts";*/
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.6fr 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-area: 1 / 1 / 4 / 3;
+
+}
+
+.profile_content_text {
+
+    font-size: 14px;
+    font-size-adjust: 1;
+
+    margin-left: 5%;
+}
+
+.profile_content_input {
+    grid-area: post-input;
+    grid-area: 1 / 1 / 2 / 3;
+
+}
+
+.profile_postbutton {
+    grid-area: 2 / 2 / 3 / 3;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+}
+.profile_postbutton:hover{
+    -webkit-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+}
+
+.profile_content_posts {
+    grid-area: posts;
+    grid-area: 3 / 1 / 4 / 3;
+
+}
