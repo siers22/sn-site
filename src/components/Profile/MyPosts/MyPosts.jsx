@@ -1,4 +1,5 @@
 import c from './MyPosts.module.css';
+import Post from "./Post/Post";
 
 let MyPosts = () => {
     return (<div className={c.post_wrapper}>
@@ -7,18 +8,23 @@ let MyPosts = () => {
             <div className={c.profile_content}>
                 <div className={c.profile_content_input}>
 
-                    <textarea>Post content</textarea>
+                    <textarea className={c.post_input}>Post content</textarea>
 
                 </div>
                 <div className={c.profile_postbutton}>
                     <button>Post Button</button>
                 </div>
-                <div className={c.profile_content_posts}>
-                    <p>Posts</p>
-
-                    <div className={c.content_post}>Post 1</div>
-                </div>
             </div>
+            <h2 className={c.start_text}>Posts</h2>
+            <div className={c.posts_ar}>
+                <Post></Post>
+                <Post></Post>
+                <Post></Post>
+                <Post></Post>
+                <Post></Post>
+            </div>
+
+
         </div>
 
     )

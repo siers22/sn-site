@@ -21,7 +21,7 @@
 }
 
 .profile_content_text {
-
+    margin-top: 5%;
     font-size: 14px;
     font-size-adjust: 1;
 
@@ -29,10 +29,16 @@
 }
 
 .profile_content_input {
-    background-color: paleturquoise;
+
     border-radius: 20px;
+
     grid-area: 1 / 1 / 2 / 3;
 
+}
+
+.post_input {
+    width: 80%;
+    margin-left: 5%;
 }
 
 .profile_postbutton {
@@ -46,11 +52,12 @@
 
 }
 
-.profile_content_posts {
-    border: palegreen 1px solid;
-    grid-area: 3 / 1 / 4 / 3;
+.start_text {
+    margin-left: 7%;
 
 }
-.content_post{
+
+.posts_ar {
+    display: table;
 
 }
