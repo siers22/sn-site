@@ -1,7 +1,7 @@
 import c from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 
-let Profile = () => {
+let Profile = (props) => {
     return (<div className={c.profile}>
         <div className={c.profile_banner_avatar}>
             <img className={c.profile_banner} src={require("./../../pictures/banner.jpg")}/>
@@ -14,12 +14,12 @@ let Profile = () => {
         </div>
         <div className={c.profile_name_description}>
             <div className={c.profile_name}>
-                <p><strong>Virodok Petrov</strong></p>
+                <p><strong>{props.name}</strong></p>
             </div>
             <div className={c.profile_description}>
-                <p>Описание</p>
+                <p>{props.prof_descr}</p>
             </div>
-            <MyPosts></MyPosts>
+            <MyPosts post_cont_1="hawo"></MyPosts>
         </div>
 
 

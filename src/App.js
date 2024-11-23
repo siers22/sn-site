@@ -9,7 +9,7 @@ const App = () => {
         <div className="app-wrapper">
             <Header></Header>
             <Nav> </Nav>
-            <Profile></Profile>
+            <Profile name="Ebaan Ebanyyy" prof_descr="prekolni" ></Profile>
         </div>
     )
 }

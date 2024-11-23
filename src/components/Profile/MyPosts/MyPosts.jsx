@@ -1,7 +1,7 @@
 import c from './MyPosts.module.css';
 import Post from "./Post/Post";
 
-let MyPosts = () => {
+let MyPosts = (props) => {
     return (<div className={c.post_wrapper}>
 
             <p className={c.profile_content_text}>My posts </p>
@@ -17,11 +17,9 @@ let MyPosts = () => {
             </div>
             <h2 className={c.start_text}>Posts</h2>
             <div className={c.posts_ar}>
-                <Post></Post>
-                <Post></Post>
-                <Post></Post>
-                <Post></Post>
-                <Post></Post>
+                <Post message="shshd" likes="150"></Post>
+                <Post message="shshshshs" likes="200"></Post>
+
             </div>
 
 

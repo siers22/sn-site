@@ -13,15 +13,23 @@
     width: 100%;
 }
 
+
 .post_avatar img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+.post_avatar_shadow {
+
+    box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 50%;
+    height: 100%;
+
 }
 
 .post_text {
     grid-area: 1 / 2 / 2 / 3;
     margin-left: 2%;
 
-    color: red;
+    color: black;
 }
