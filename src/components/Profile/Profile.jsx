@@ -19,7 +19,7 @@ let Profile = (props) => {
             <div className={c.profile_description}>
                 <p>{props.prof_descr}</p>
             </div>
-            <MyPosts post_cont_1="hawo"></MyPosts>
+            <MyPosts></MyPosts>
         </div>
 
 
