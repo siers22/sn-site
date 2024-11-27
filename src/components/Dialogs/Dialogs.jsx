@@ -2,7 +2,7 @@ import c from './Dialogs.module.css';
 
 let Dialogs = (props) => {
     return (
-        <div className={c.dialogs_wrapper}>
+        <div>
             <p>dialogs</p>
         </div>
     )

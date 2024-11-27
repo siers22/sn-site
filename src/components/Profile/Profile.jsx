@@ -2,7 +2,7 @@ import c from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 
 let Profile = (props) => {
-    return (<div className={c.profile}>
+    return (<div>
         <div className={c.profile_banner_avatar}>
             <img className={c.profile_banner} src={require("./../../pictures/banner.jpg")}/>
 

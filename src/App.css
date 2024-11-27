@@ -1,13 +1,17 @@
-.app-wrapper {
+.app_wrapper {
     display: grid;
     grid-template-areas:
     "header header"
-    "nav profile";
+    "nav content";
     grid-template-rows: 60px 1fr;
     grid-template-columns:2fr 20fr;
     grid-gap: 5px;
     width: 100%;
 }
+.app_wrapper_content{
+    grid-area: content;
+}
+
 
 
 
